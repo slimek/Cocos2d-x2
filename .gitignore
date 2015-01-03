@@ -38,6 +38,7 @@ SubmissionInfo
 
 # Ignore files build by ndk and eclipse
 libs/
+lib/
 bin/
 obj/
 gen/
@@ -82,7 +83,6 @@ build_*_vc10/
 *.xcworkspacedata
 *.xcuserstate
 xcschememanagement.plist
-build/
 .DS_Store
 ._.*
 xcuserdata/
