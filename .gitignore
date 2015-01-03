@@ -43,6 +43,7 @@ bin/
 obj/
 gen/
 assets/
+.settings/
 local.properties
 
 # Ignore specific winrt files
