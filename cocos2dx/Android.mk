@@ -140,7 +140,28 @@ tilemap_parallax_nodes/CCTMXXMLParser.cpp \
 tilemap_parallax_nodes/CCTileMapAtlas.cpp \
 touch_dispatcher/CCTouchDispatcher.cpp \
 touch_dispatcher/CCTouchHandler.cpp \
-touch_dispatcher/CCTouch.cpp
+touch_dispatcher/CCTouch.cpp \
+../extensions/spine/Animation.cpp \
+../extensions/spine/AnimationState.cpp \
+../extensions/spine/AnimationStateData.cpp \
+../extensions/spine/Atlas.cpp \
+../extensions/spine/AtlasAttachmentLoader.cpp \
+../extensions/spine/Attachment.cpp \
+../extensions/spine/AttachmentLoader.cpp \
+../extensions/spine/Bone.cpp \
+../extensions/spine/BoneData.cpp \
+../extensions/spine/CCSkeleton.cpp \
+../extensions/spine/CCSkeletonAnimation.cpp \
+../extensions/spine/extension.cpp \
+../extensions/spine/Json.cpp \
+../extensions/spine/RegionAttachment.cpp \
+../extensions/spine/Skeleton.cpp \
+../extensions/spine/SkeletonData.cpp \
+../extensions/spine/SkeletonJson.cpp \
+../extensions/spine/Skin.cpp \
+../extensions/spine/Slot.cpp \
+../extensions/spine/SlotData.cpp \
+../extensions/spine/spine-cocos2dx.cpp
 
 LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH) \
                     $(LOCAL_PATH)/include \
@@ -150,7 +171,8 @@ LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH) \
 LOCAL_C_INCLUDES := $(LOCAL_PATH) \
                     $(LOCAL_PATH)/include \
                     $(LOCAL_PATH)/kazmath/include \
-                    $(LOCAL_PATH)/platform/android
+                    $(LOCAL_PATH)/platform/android \
+					$(LOCAL_PATH)/../extensions
 
 LOCAL_EXPORT_LDLIBS := -lGLESv2 \
                        -llog \
