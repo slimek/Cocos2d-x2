@@ -1,0 +1,1 @@
+Eclipse Android project requires a src folder, even it is empty.
