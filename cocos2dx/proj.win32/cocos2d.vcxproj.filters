@@ -103,6 +103,9 @@
     <Filter Include="support\component">
       <UniqueIdentifier>{485f1c18-d463-48d0-bcaa-a10e32aa3332}</UniqueIdentifier>
     </Filter>
+    <Filter Include="spine">
+      <UniqueIdentifier>{929120ba-ef87-422a-a95c-522d2a3b52cf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\base_nodes\CCAtlasNode.cpp">
@@ -475,6 +478,69 @@
       <Filter>support\component</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp" />
+    <ClCompile Include="..\..\extensions\spine\AtlasAttachmentLoader.cpp">
+      <Filter>spine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\extensions\spine\Attachment.cpp">
+      <Filter>spine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\extensions\spine\AttachmentLoader.cpp">
+      <Filter>spine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\extensions\spine\Bone.cpp">
+      <Filter>spine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\extensions\spine\BoneData.cpp">
+      <Filter>spine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\extensions\spine\CCSkeleton.cpp">
+      <Filter>spine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\extensions\spine\CCSkeletonAnimation.cpp">
+      <Filter>spine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\extensions\spine\extension.cpp">
+      <Filter>spine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\extensions\spine\Json.cpp">
+      <Filter>spine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\extensions\spine\RegionAttachment.cpp">
+      <Filter>spine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\extensions\spine\Skeleton.cpp">
+      <Filter>spine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\extensions\spine\SkeletonData.cpp">
+      <Filter>spine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\extensions\spine\SkeletonJson.cpp">
+      <Filter>spine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\extensions\spine\Skin.cpp">
+      <Filter>spine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\extensions\spine\Slot.cpp">
+      <Filter>spine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\extensions\spine\SlotData.cpp">
+      <Filter>spine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\extensions\spine\spine-cocos2dx.cpp">
+      <Filter>spine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\extensions\spine\Animation.cpp">
+      <Filter>spine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\extensions\spine\AnimationState.cpp">
+      <Filter>spine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\extensions\spine\AnimationStateData.cpp">
+      <Filter>spine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\extensions\spine\Atlas.cpp">
+      <Filter>spine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\base_nodes\CCAtlasNode.h">
@@ -954,5 +1020,73 @@
       <Filter>support\component</Filter>
     </ClInclude>
     <ClInclude Include="pch.h" />
+    <ClInclude Include="..\ExtensionExport.h" />
+    <ClInclude Include="..\ExtensionMacros.h" />
+    <ClInclude Include="..\..\extensions\spine\Atlas.h">
+      <Filter>spine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extensions\spine\AtlasAttachmentLoader.h">
+      <Filter>spine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extensions\spine\Attachment.h">
+      <Filter>spine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extensions\spine\AttachmentLoader.h">
+      <Filter>spine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extensions\spine\Bone.h">
+      <Filter>spine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extensions\spine\BoneData.h">
+      <Filter>spine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extensions\spine\CCSkeleton.h">
+      <Filter>spine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extensions\spine\CCSkeletonAnimation.h">
+      <Filter>spine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extensions\spine\extension.h">
+      <Filter>spine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extensions\spine\Json.h">
+      <Filter>spine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extensions\spine\RegionAttachment.h">
+      <Filter>spine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extensions\spine\Skeleton.h">
+      <Filter>spine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extensions\spine\SkeletonData.h">
+      <Filter>spine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extensions\spine\SkeletonJson.h">
+      <Filter>spine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extensions\spine\Skin.h">
+      <Filter>spine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extensions\spine\Slot.h">
+      <Filter>spine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extensions\spine\SlotData.h">
+      <Filter>spine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extensions\spine\spine.h">
+      <Filter>spine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extensions\spine\spine-cocos2dx.h">
+      <Filter>spine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extensions\spine\Animation.h">
+      <Filter>spine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extensions\spine\AnimationState.h">
+      <Filter>spine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\extensions\spine\AnimationStateData.h">
+      <Filter>spine</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

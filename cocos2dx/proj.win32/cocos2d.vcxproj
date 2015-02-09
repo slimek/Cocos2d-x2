@@ -73,7 +73,7 @@
     </PreBuildEvent>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir)..\platform\win32;$(ProjectDir)..\platform\third_party\win32\iconv;$(ProjectDir)..\platform\third_party\win32\zlib;$(ProjectDir)..\platform\third_party\win32\libpng;$(ProjectDir)..\platform\third_party\win32\libjpeg;$(ProjectDir)..\platform\third_party\win32\libtiff;$(ProjectDir)..\platform\third_party\win32\libwebp;$(ProjectDir)..\platform\third_party\win32\pthread;$(ProjectDir)..\platform\third_party\win32\OGLES;..\include;$(ProjectDir)..\kazmath\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir)..\platform\win32;$(ProjectDir)..\platform\third_party\win32\iconv;$(ProjectDir)..\platform\third_party\win32\zlib;$(ProjectDir)..\platform\third_party\win32\libpng;$(ProjectDir)..\platform\third_party\win32\libjpeg;$(ProjectDir)..\platform\third_party\win32\libtiff;$(ProjectDir)..\platform\third_party\win32\libwebp;$(ProjectDir)..\platform\third_party\win32\pthread;$(ProjectDir)..\platform\third_party\win32\OGLES;..\include;$(ProjectDir)..\kazmath\include;$(ProjectDir)..\..\extensions\spine;$(ProjectDir)..\..\extensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;COCOS2DXWIN32_EXPORTS;GL_GLEXT_PROTOTYPES;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -112,7 +112,7 @@ xcopy /Y /Q "$(ProjectDir)..\platform\third_party\win32\libraries\*.*" "$(OutDir
       </Command>
     </PreBuildEvent>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir)..\platform\win32;$(ProjectDir)..\platform\third_party\win32\iconv;$(ProjectDir)..\platform\third_party\win32\zlib;$(ProjectDir)..\platform\third_party\win32\libpng;$(ProjectDir)..\platform\third_party\win32\libjpeg;$(ProjectDir)..\platform\third_party\win32\libtiff;$(ProjectDir)..\platform\third_party\win32\libwebp;$(ProjectDir)..\platform\third_party\win32\pthread;$(ProjectDir)..\platform\third_party\win32\OGLES;..\include;$(ProjectDir)..\kazmath\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir)..\platform\win32;$(ProjectDir)..\platform\third_party\win32\iconv;$(ProjectDir)..\platform\third_party\win32\zlib;$(ProjectDir)..\platform\third_party\win32\libpng;$(ProjectDir)..\platform\third_party\win32\libjpeg;$(ProjectDir)..\platform\third_party\win32\libtiff;$(ProjectDir)..\platform\third_party\win32\libwebp;$(ProjectDir)..\platform\third_party\win32\pthread;$(ProjectDir)..\platform\third_party\win32\OGLES;..\include;$(ProjectDir)..\kazmath\include;$(ProjectDir)..\..\extensions\spine;$(ProjectDir)..\..\extensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;COCOS2DXWIN32_EXPORTS;GL_GLEXT_PROTOTYPES;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -145,6 +145,27 @@ xcopy /Y /Q "$(ProjectDir)..\platform\third_party\win32\libraries\*.*" "$(OutDir
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\extensions\spine\Animation.cpp" />
+    <ClCompile Include="..\..\extensions\spine\AnimationState.cpp" />
+    <ClCompile Include="..\..\extensions\spine\AnimationStateData.cpp" />
+    <ClCompile Include="..\..\extensions\spine\Atlas.cpp" />
+    <ClCompile Include="..\..\extensions\spine\AtlasAttachmentLoader.cpp" />
+    <ClCompile Include="..\..\extensions\spine\Attachment.cpp" />
+    <ClCompile Include="..\..\extensions\spine\AttachmentLoader.cpp" />
+    <ClCompile Include="..\..\extensions\spine\Bone.cpp" />
+    <ClCompile Include="..\..\extensions\spine\BoneData.cpp" />
+    <ClCompile Include="..\..\extensions\spine\CCSkeleton.cpp" />
+    <ClCompile Include="..\..\extensions\spine\CCSkeletonAnimation.cpp" />
+    <ClCompile Include="..\..\extensions\spine\extension.cpp" />
+    <ClCompile Include="..\..\extensions\spine\Json.cpp" />
+    <ClCompile Include="..\..\extensions\spine\RegionAttachment.cpp" />
+    <ClCompile Include="..\..\extensions\spine\Skeleton.cpp" />
+    <ClCompile Include="..\..\extensions\spine\SkeletonData.cpp" />
+    <ClCompile Include="..\..\extensions\spine\SkeletonJson.cpp" />
+    <ClCompile Include="..\..\extensions\spine\Skin.cpp" />
+    <ClCompile Include="..\..\extensions\spine\Slot.cpp" />
+    <ClCompile Include="..\..\extensions\spine\SlotData.cpp" />
+    <ClCompile Include="..\..\extensions\spine\spine-cocos2dx.cpp" />
     <ClCompile Include="..\base_nodes\CCAtlasNode.cpp" />
     <ClCompile Include="..\base_nodes\CCNode.cpp" />
     <ClCompile Include="..\ccFPSImages.c">
@@ -376,6 +397,28 @@ xcopy /Y /Q "$(ProjectDir)..\platform\third_party\win32\libraries\*.*" "$(OutDir
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\extensions\spine\Animation.h" />
+    <ClInclude Include="..\..\extensions\spine\AnimationState.h" />
+    <ClInclude Include="..\..\extensions\spine\AnimationStateData.h" />
+    <ClInclude Include="..\..\extensions\spine\Atlas.h" />
+    <ClInclude Include="..\..\extensions\spine\AtlasAttachmentLoader.h" />
+    <ClInclude Include="..\..\extensions\spine\Attachment.h" />
+    <ClInclude Include="..\..\extensions\spine\AttachmentLoader.h" />
+    <ClInclude Include="..\..\extensions\spine\Bone.h" />
+    <ClInclude Include="..\..\extensions\spine\BoneData.h" />
+    <ClInclude Include="..\..\extensions\spine\CCSkeleton.h" />
+    <ClInclude Include="..\..\extensions\spine\CCSkeletonAnimation.h" />
+    <ClInclude Include="..\..\extensions\spine\extension.h" />
+    <ClInclude Include="..\..\extensions\spine\Json.h" />
+    <ClInclude Include="..\..\extensions\spine\RegionAttachment.h" />
+    <ClInclude Include="..\..\extensions\spine\Skeleton.h" />
+    <ClInclude Include="..\..\extensions\spine\SkeletonData.h" />
+    <ClInclude Include="..\..\extensions\spine\SkeletonJson.h" />
+    <ClInclude Include="..\..\extensions\spine\Skin.h" />
+    <ClInclude Include="..\..\extensions\spine\Slot.h" />
+    <ClInclude Include="..\..\extensions\spine\SlotData.h" />
+    <ClInclude Include="..\..\extensions\spine\spine-cocos2dx.h" />
+    <ClInclude Include="..\..\extensions\spine\spine.h" />
     <ClInclude Include="..\base_nodes\CCAtlasNode.h" />
     <ClInclude Include="..\base_nodes\CCNode.h" />
     <ClInclude Include="..\ccFPSImages.h" />
@@ -411,6 +454,8 @@ xcopy /Y /Q "$(ProjectDir)..\platform\third_party\win32\libraries\*.*" "$(OutDir
     <ClInclude Include="..\actions\CCActionProgressTimer.h" />
     <ClInclude Include="..\actions\CCActionTiledGrid.h" />
     <ClInclude Include="..\actions\CCActionTween.h" />
+    <ClInclude Include="..\ExtensionExport.h" />
+    <ClInclude Include="..\ExtensionMacros.h" />
     <ClInclude Include="..\include\ccConfig.h" />
     <ClInclude Include="..\include\CCEventType.h" />
     <ClInclude Include="..\include\ccMacros.h" />
