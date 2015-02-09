@@ -6,11 +6,17 @@
         #include <string.h>
     #endif
 
-    #if defined(_USREXDLL)
-        #define CC_EX_DLL     __declspec(dllexport)
-    #else         /* use a DLL library */
-        #define CC_EX_DLL     __declspec(dllimport)
-    #endif
+    //#if defined(_USREXDLL)
+    //    #define CC_EX_DLL     __declspec(dllexport)
+    //#else         /* use a DLL library */
+    //    #define CC_EX_DLL     __declspec(dllimport)
+    //#endif
+    // SIXION MODIFY:
+    // 1. We want to build libcocos2d as a static library
+    // 2. We move Spine extension source codes from libExtension into libcocos2d.
+    // 3. We don't want to use other extensions.
+    // Therefore we invalidate this define so that makes linker happy :)
+    #define CC_EX_DLL
 
 
     /* Define NULL pointer value */
