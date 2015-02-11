@@ -1,0 +1,1 @@
+Eclipse Android project requires a res folder, even it is empty.
