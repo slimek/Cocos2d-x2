@@ -1020,8 +1020,6 @@
       <Filter>support\component</Filter>
     </ClInclude>
     <ClInclude Include="pch.h" />
-    <ClInclude Include="..\ExtensionExport.h" />
-    <ClInclude Include="..\ExtensionMacros.h" />
     <ClInclude Include="..\..\extensions\spine\Atlas.h">
       <Filter>spine</Filter>
     </ClInclude>
@@ -1088,5 +1086,7 @@
     <ClInclude Include="..\..\extensions\spine\AnimationStateData.h">
       <Filter>spine</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\extensions\ExtensionExport.h" />
+    <ClInclude Include="..\..\extensions\ExtensionMacros.h" />
   </ItemGroup>
 </Project>

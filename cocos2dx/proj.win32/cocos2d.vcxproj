@@ -397,6 +397,8 @@ xcopy /Y /Q "$(ProjectDir)..\platform\third_party\win32\libraries\*.*" "$(OutDir
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\extensions\ExtensionExport.h" />
+    <ClInclude Include="..\..\extensions\ExtensionMacros.h" />
     <ClInclude Include="..\..\extensions\spine\Animation.h" />
     <ClInclude Include="..\..\extensions\spine\AnimationState.h" />
     <ClInclude Include="..\..\extensions\spine\AnimationStateData.h" />
@@ -454,8 +456,6 @@ xcopy /Y /Q "$(ProjectDir)..\platform\third_party\win32\libraries\*.*" "$(OutDir
     <ClInclude Include="..\actions\CCActionProgressTimer.h" />
     <ClInclude Include="..\actions\CCActionTiledGrid.h" />
     <ClInclude Include="..\actions\CCActionTween.h" />
-    <ClInclude Include="..\ExtensionExport.h" />
-    <ClInclude Include="..\ExtensionMacros.h" />
     <ClInclude Include="..\include\ccConfig.h" />
     <ClInclude Include="..\include\CCEventType.h" />
     <ClInclude Include="..\include\ccMacros.h" />
