@@ -261,6 +261,7 @@
 				01B6B8F51A9C792700404118 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
